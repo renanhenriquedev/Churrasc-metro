@@ -78,6 +78,17 @@ function execut() {
     });
 }
 
+const footer = document.createElement('footer')
+body.appendChild(footer);
+
+const textFooter = document.createElement('p');
+textFooter.innerText = '2022 Ⓒ Desenvolvido por Renan Henrique';
+
+const pegarFooter = document.querySelector('footer');
+
+pegarFooter.appendChild(textFooter);
+
+
 function init() {
     createInput('adult', 'Adultos');
     createInput('children', 'Crianças');
